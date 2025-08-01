@@ -134,6 +134,16 @@ Configure updates, monitoring, and logging
 - **Platform software**:
   - **Environment properties**: create all required environment variables like `DJANGO_SECRET_KEY`, `DJANGO_ALLOWED_HOSTS`, `DATABASE_HOST` and others
 
+## Connect to the instance
+
+Connect to the NAT instance and create `private-key.pem` file with the pem key that was created and chosen at app deployment. For example, run `nano private-key.pem` and insert key value.
+
+Then connect to the app instance using this key:
+
+``` 
+ssh -i private-key.pem <your-app-ec2-private-ip>
+```
+
 ## Create superuser in django_app
 
 Log in to one of instances and create `.env` file with appropriate values
