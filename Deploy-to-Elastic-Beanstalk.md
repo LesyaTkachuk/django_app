@@ -64,7 +64,7 @@ Go to **EC2 → Network & Security → Key Pairs → Create key pair**
 Clone this repository
 
 ```bash
-git clone https://github.com/GoIT-FCC/django_app.git
+git clone  https://github.com/LesyaTkachuk/django_app
 ```
 
 Go to `django_app` directory
@@ -145,6 +145,9 @@ export DATABASE_USERNAME=
 export DATABASE_PASSWORD=
 export DATABASE_HOST=
 ```
+
+`DJANGO_SECRET_KEY` could be generated on the site https://djecrety.ir/.
+Database variables could be obtained as outputs after running `terraform init` `terraform apply` in `.tf/practical-lesson-3`
 
 Source this file
 
